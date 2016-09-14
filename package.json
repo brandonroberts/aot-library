@@ -1,7 +1,9 @@
 {
-  "name": "angular2-quickstart",
+  "name": "aot-library",
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "main":"./dist/index.js",
+  "typings":"./dist/index.d.ts",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
@@ -14,7 +16,8 @@
     "test-once": "tsc && karma start karma.conf.js --single-run",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "webdriver:update": "webdriver-manager update"
+    "webdriver:update": "webdriver-manager update",
+    "build": "rimraf dist && npm run tsc"
   },
   "keywords": [],
   "author": "",
