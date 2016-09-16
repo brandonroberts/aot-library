@@ -18,3 +18,6 @@ _temp
 !systemjs.config.js
 !typings/typings.d.ts
 !wallaby.js
+!compiled/index.js
+!compiled/index.js.map
+!rollup.config.js

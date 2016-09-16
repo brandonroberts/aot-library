@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<h1>My First Angular 2 App</h1>`,
+  styles: [
+    `
+      h1 {
+        color: #369;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 250%;
+      }
+    `
+  ]
 })
 export class AppComponent { }
